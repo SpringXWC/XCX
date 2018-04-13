@@ -1,0 +1,42 @@
+<!--index.wxml-->
+<view>
+  <view class='home'>
+    <swiper 
+      indicator-dots="{{indicatorDots}}"
+      autoplay="{{autoplay}}" 
+      interval="{{interval}}" 
+      duration="{{duration}}">
+      <block wx:for="{{imgUrls}}" wx:key="key">
+        <swiper-item>
+           <image src="{{item.urlImg}}" url="{{item.url}}" class="slide-image"/> 
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  
+  <view>
+    <view class="tabBar">
+      <view class="tabBar-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">小龙居</view>  
+      <view class="tabBar-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">龙悦居</view>  
+      <view class="tabBar-list {{currentTab==2 ? 'on' : ''}}" data-current="2" bindtap="swichNav">星河</view>
+      <view class="tabBar-list {{currentTab==3 ? 'on' : ''}}" data-current="3" bindtap="swichNav">CoCocity</view>    
+    </view>
+    <swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{winHeight - 31}}px" bindchange="bindChange">  
+      <swiper-item>  
+        <view>小龙居</view>  
+      </swiper-item>  
+    
+      <swiper-item>  
+        <view>龙悦居</view>  
+      </swiper-item> 
+
+      <swiper-item>  
+        <view>星河</view>  
+      </swiper-item> 
+
+      <swiper-item>  
+        <view>cococity</view>  
+      </swiper-item> 
+    </swiper>    
+  </view>  
+</view>                            

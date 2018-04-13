@@ -1,0 +1,10 @@
+<!--logs.wxml-->
+
+<view class="container log-list">
+
+<view class="login-from">
+  <input placeholder="请输入手机号" focus="focus" placeholder-class="placeholderCla" class="tel" bindInput="telInput" maxlength="11" />
+  <input placeholder="请输入密码"  focus="focus" placeholder-class="placeholderCla" class="password" password="true" bindInput="passwordInput" />
+</view>
+ <button  size="{{primarySize}}"  bindtap="login" class='loginBtn' hover-class="other-button-hover"> 登录 </button>
+</view>

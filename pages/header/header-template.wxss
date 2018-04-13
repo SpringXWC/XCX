@@ -1,0 +1,23 @@
+ .headerCon{
+  display: flex;
+  align-items: center;
+  background-color: #1f87c6;
+  height: 90rpx;
+}
+.headerImg image{
+     width:36rpx;
+    height:36rpx; 
+    vertical-align: middle;   
+    text-align: left;
+    margin-left:20rpx; 
+}
+.headerText{
+  flex: 1;
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 36rpx;
+  color:#fff;
+  
+} 

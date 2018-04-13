@@ -1,0 +1,11 @@
+
+<template name="header">
+  <view class="headerCon">
+      <view class="headerImg">
+         <image src="../../images/index/return.png"></image>  
+      </view>
+      <span class='headerText'>首页</span>   
+  </view>   
+</template>
+  
+

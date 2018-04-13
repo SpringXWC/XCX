@@ -1,0 +1,34 @@
+{
+  "pages":[
+    "pages/logs/logs",
+    "pages/welcome/welcome",
+    "pages/index/index",
+    "pages/order/order"
+   
+    
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#1f87c6",
+    "navigationBarTitleText": "小怪兽",
+    "navigationBarTextStyle":"#FFF"
+  },
+  "tabBar": {
+    "selectedColor": "#1f87c6",
+    "list": [
+      {
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "images/index/homePage.png",
+      "selectedIconPath": "images/index/homePage_select.png"
+    },
+    {
+      "pagePath": "pages/order/order",
+      "text": "订单",
+      "iconPath": "images/index/service.png",
+      "selectedIconPath": "images/index/service_select.png"
+      
+    }
+    ]
+  }
+}

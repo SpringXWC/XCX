@@ -1,0 +1,5 @@
+<view class="welcome">
+  <image src="../../images/welcome/user.jpg" bindtap="clickTo"/>
+  <view class='welcomeText'>welcome</view>
+</view>
+  
