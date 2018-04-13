@@ -1,9 +1,12 @@
 {
   "pages":[
+    "pages/order/order",
     "pages/logs/logs",
     "pages/welcome/welcome",
     "pages/index/index",
-    "pages/order/order"
+    
+    "pages/service/service",
+    "pages/personal/personal"
    
     
   ],
@@ -28,6 +31,18 @@
       "iconPath": "images/index/service.png",
       "selectedIconPath": "images/index/service_select.png"
       
+    },
+    {
+      "pagePath": "pages/service/service",
+      "text": "客服",
+      "iconPath": "images/index/homePage.png",
+      "selectedIconPath": "images/index/homePage_select.png"
+    },
+    {
+      "pagePath": "pages/personal/personal",
+      "text": "我的",
+      "iconPath": "images/index/homePage.png",
+      "selectedIconPath": "images/index/homePage_select.png"
     }
     ]
   }

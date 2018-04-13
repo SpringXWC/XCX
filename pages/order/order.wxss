@@ -1,0 +1,21 @@
+.nav{
+  display: flex;
+  flex-direction:row; 
+  padding:40rpx;
+  background-color:#ccc;
+  overflow: auto;
+}
+.img{
+  width: 200rpx;
+  height:200rpx;
+}
+.text{
+  font-size:40rpx;
+  color:#000; 
+  padding-left: 50rpx;
+  width: 600rpx;
+  
+}
+.hoverCla{
+  color:#000;
+}

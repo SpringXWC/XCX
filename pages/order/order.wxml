@@ -1,0 +1,12 @@
+<view>
+<scroll-view scroll-y="true">
+   <block wx:for="{{list}}" wx:key="key">
+    <navigator url="{{item.url}}" hover-class="hoverCla" class='nav' open-type="reLaunch">
+      <image src='{{item.imgUrl}}' class='img'/>
+      <view class='text'>
+        <text >{{item.text}}</text>
+      </view>
+    </navigator>
+  </block> 
+</scroll-view> 
+</view>
