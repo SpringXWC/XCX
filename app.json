@@ -1,23 +1,24 @@
 {
   "pages":[
-    "pages/order/order",
+    "pages/personal/personal",
+    "pages/cart/cart",
+    "pages/list/list",
+    "pages/index/index",
     "pages/logs/logs",
     "pages/welcome/welcome",
-    "pages/index/index",
+    "pages/service/service"
     
-    "pages/service/service",
-    "pages/personal/personal"
    
     
   ],
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#1f87c6",
+    "navigationBarBackgroundColor": "#FFCC00",
     "navigationBarTitleText": "小怪兽",
     "navigationBarTextStyle":"#FFF"
   },
   "tabBar": {
-    "selectedColor": "#1f87c6",
+    "selectedColor": "#FFCC00",
     "list": [
       {
       "pagePath": "pages/index/index",
@@ -26,15 +27,15 @@
       "selectedIconPath": "images/index/homePage_select.png"
     },
     {
-      "pagePath": "pages/order/order",
-      "text": "订单",
+      "pagePath": "pages/list/list",
+      "text": "商品列表",
       "iconPath": "images/index/service.png",
       "selectedIconPath": "images/index/service_select.png"
       
     },
     {
-      "pagePath": "pages/service/service",
-      "text": "客服",
+      "pagePath": "pages/cart/cart",
+      "text": "购物车",
       "iconPath": "images/index/homePage.png",
       "selectedIconPath": "images/index/homePage_select.png"
     },

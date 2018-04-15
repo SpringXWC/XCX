@@ -1,4 +1,22 @@
 <!--pages/personal/personal.wxml-->
-<text>客服跑这了</text>
+
+  <view class="content"> 
+        <!-- 头部 -->
+    <view class="person">
+      <view>
+        <image class="personImg" src="../../images/personal/per_120X120px.png" />
+      </view>
+      <view class="person-1">
+        <view class='text1'>头像哦</view>
+        <view class='text2'>iccid:<text>13695584111</text></view>
+      </view>
+    </view>
+    <view class='perNet'  wx:for="{{list}}" wx:key="key">
+      <navigator url="{{item.url}}">
+        <image src="{{item.imgUrl}}" class='img'/>
+        <text class='text3'>{{item.title}}</text>
+      </navigator>    
+    </view>
+  </view>
 
 

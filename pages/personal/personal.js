@@ -5,7 +5,13 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+    list:[
+      { url: '../person-1/person-1', imgUrl:'../../images/personal/net_64x64px.png',title:"我的收藏"},
+      { url: '../person-2/person-2', imgUrl: '../../images/personal/order_64x64px.png', title: "我的日志" },
+      { url: '../person-3/person-3', imgUrl: '../../images/personal/pwd_64x64px.png', title: "我的订单" },
+      { url: '../person-4/person-4', imgUrl: '../../images/personal/my_64x64px.png', title: "我的订单" },
+      
+    ]
   },
 
   /**

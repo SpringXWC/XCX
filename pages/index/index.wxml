@@ -13,8 +13,40 @@
       </block>
     </swiper>
   </view>
-  
+  <!-- menu -->
+  <view class="menu">   
+    <view class="menu-list" wx:for="{{menu.imgUrls}}" wx:key="key">  
+      <image class="menu-img" src="{{item}}" />  
+      <view class="menu-desc">{{menu.descs[index]}}</view>  
+    </view>  
+  </view>  
+  <view class="gap-1"></view>
+<!-- active -->
+  <view class="setMeal cleafix">
+    <view class='title'>流量卡套餐</view>
+    <view class="setMealImg">
+      <view class="setMealImg-left">
+        <image src="{{activityImg1}}" class="imgLeft" />  
+      </view> 
+      <view class="setMealImg-rightTop">
+        <image src="{{activityImg2}}"  class="imgRight" /> 
+      </view>
+      <view class="setMealImg-rightBottom">
+        <view class='rightBottom-left'>
+          <image src="{{activityImg3}}" class='rightBottomImg-left' /> 
+        </view>
+        <view class='rightBottom-right'>
+          <image src="{{activityImg4}}" class='rightBottomImg-right'/> 
+        </view>
+      </view>  
+    </view>
+  </view>
+  <view class="gap-3"></view>
   <view>
+    <view class='title'>活动</view>
+    <image src="{{activityImg5}}" class='activeImg'/>
+  </view>   
+  <!-- <view>
     <view class="tabBar">
       <view class="tabBar-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">小龙居</view>  
       <view class="tabBar-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">龙悦居</view>  
@@ -38,5 +70,7 @@
         <view>cococity</view>  
       </swiper-item> 
     </swiper>    
-  </view>  
-</view>                            
+  </view>   -->
+
+</view> 
+                        

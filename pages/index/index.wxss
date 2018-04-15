@@ -36,3 +36,136 @@
 .swiper-box view{  
     text-align: center;  
 }  
+
+/* menu */
+
+.menu{  
+  width:100%;  
+  margin-top:20rpx;  
+}  
+.menu:after{  
+    content:"";  
+    display:block;  
+    clear:both;  
+}  
+  
+.menu-list{  
+    float:left;  
+    width:calc(100% / 5);  
+    box-sizing: border-box;  
+    padding-bottom:10px;  
+}  
+  
+.menu-img{  
+    width:120rpx;  
+    height:84rpx;  
+    display:block;  
+    margin:0 auto;  
+    margin-bottom:5px;  
+}  
+.menu-desc{  
+    background-color:#ffffff;  
+    color:#333333;  
+    width:100%;  
+    text-align: center;  
+    display:block;  
+    font-size:12px;  
+}  
+.gap-1,.gap-2{  
+    width:100%;  
+    height:10rpx;  
+    background:rgb(238, 238, 238);  
+}  
+
+/* active */
+
+  .setMeal{
+        margin-top: 10rpx;
+  }
+  .setMeal:after{  
+    content:"";  
+    display:block;  
+    clear:both;  
+}  
+  
+  .title{
+    font-size:32rpx;
+    color:#333;
+    height: 80rpx;
+    line-height:80rpx;
+    background-color:#fff;
+    padding-left: 30rpx;
+  }
+  .setMealImg-left{
+    float: left;
+    padding-right:10rpx;
+    width: 240rpx;
+    height: 400rpx;    
+   }
+  .imgLeft{
+    width: 100%;
+    height: 100%;
+    border-radius:20rpx;
+    box-shadow:4rpx 4rpx 4rpx #c8c8c8;
+  }
+        
+  .setMealImg-rightTop{
+    float: left;
+    width: 500rpx;
+    height: 200rpx;
+  }
+  .imgRight{
+     width: 100%;
+     height: 100%;
+    border-radius:20rpx;
+    box-shadow:4rpx 4rpx 4rpx #c8c8c8;
+  }
+         
+  .setMealImg-rightBottom{
+    margin-top: 10rpx;
+    float: right;
+  }
+  .rightBottom-left{
+    float: left;
+    width: 245rpx;
+    height: 190rpx;
+  }
+  .rightBottomImg-left{
+    width: 100%;
+    height: 100%;
+    border-radius:20rpx;
+    box-shadow:4rpx 4rpx 4rpx #c8c8c8;
+  }
+           
+  .rightBottom-right{
+    float: right;
+    margin-left:10rpx;
+    width: 245rpx;
+    height: 190rpx;
+  }
+  .rightBottomImg-right{
+    width: 100%;
+    height: 100%;
+    border-radius:20rpx;
+    box-shadow:4rpx 4rpx 4rpx #c8c8c8;
+  }
+      /*流量卡活动*/
+  .activity{
+  margin-top: 10rpx;
+  }
+ 
+  .activityImg{
+    width: 750rpx;
+    height: 200rpx;
+    margin-bottom: 90rpx;
+  }
+  .activeImg{
+    width: 100%;
+    height: 200rpx;
+  }
+  .gap-3{
+    margin-top: 70rpx;
+    width:100%;  
+    height:10rpx;  
+    background:rgb(238, 238, 238);  
+  }

@@ -1,1 +1,64 @@
 /* pages/personal/personal.wxss */
+.content{
+  height: 100%;
+   overflow: auto; 
+  background-color:#e6e6e6;
+}
+.person{
+    width: 100%;
+    margin-top: 20rpx;
+    box-sizing:border-box;
+    padding: 30rpx;
+    background-color:#fff;
+    display: flex;
+    flex-direction:row; 
+     border-top: 1rpx solid #e6e6e6;
+    border-bottom: 1rpx solid #e6e6e6; 
+    margin-bottom:20rpx;  
+}
+.personImg{
+    padding: 30rpx;
+    width: 120rpx;
+    height: 120rpx;
+    float: left;
+}
+.person-1{
+    float: left;
+}
+.text1{
+    font-size: 28rpx;
+    color:#000;
+    font-weight: bold;
+    padding-top: 50rpx;
+    padding-bottom:20rpx;
+    float: left;
+}
+.text2{
+    font-size: 28rpx;
+    color:#666;
+    padding-top: 20rpx;
+}
+
+.perNet{
+    box-sizing:border-box;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction:row;
+    border-bottom:1rpx solid #f0f0f0;
+}
+.img{
+    padding-top: 20rpx;
+    padding-bottom:20rpx;
+    padding-left: 30rpx;
+    width:90rpx;
+    height: 90rpx;  
+}
+.text3{
+    padding-left: 30rpx;
+    padding-top: 40rpx;
+    color:#000;
+    font-size: 32rpx;
+}
+
+

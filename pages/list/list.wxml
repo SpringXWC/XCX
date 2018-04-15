@@ -1,0 +1,29 @@
+<!--pages/list/list.wxml-->
+<view>
+   <view class="container">    
+    <view class="title">  
+      <view class="title_val">商品列表</view>  
+    </view>  
+    <view class="goodslist">  
+      <block wx:for="{{goodslist}}" wx:key="key">  
+        <view class="goods">   
+          <view>  
+            <image src="{{item.imgUrl}}" class="good-img" />  
+          </view>  
+          <view class="good-cont">  
+            <view class="goods-navigator">  
+              <text class="good-name">{{item.name}}</text>  
+            </view>   
+            <view class="good-price">  
+              <text>￥{{item.price}}</text>  
+              <image id="{{item.id}}" class="cart" src="../../images/list/cart.png" bindtap="addcart" />  
+            </view>  
+          </view>  
+        </view>  
+      </block>  
+    </view>  
+  </view> 
+
+</view>
+ 
+
