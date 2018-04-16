@@ -1,24 +1,31 @@
 {
   "pages":[
-    "pages/personal/personal",
-    "pages/cart/cart",
-    "pages/list/list",
-    "pages/index/index",
     "pages/logs/logs",
-    "pages/welcome/welcome",
-    "pages/service/service"
+    "pages/index/index",
+    "pages/list/list",
+    "pages/cart/cart",
+    "pages/personal/personal",
+    "pages/person-1/person-1",
+    "pages/person-2/person-2",
+    "pages/person-3/person-3",
+    "pages/person-4/person-4",
+    "pages/question/question",
+    "pages/answer/answer",
+    "pages/welcome/welcome"
+    
     
    
     
   ],
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#FFCC00",
+    "navigationBarBackgroundColor": "#292929",
     "navigationBarTitleText": "小怪兽",
     "navigationBarTextStyle":"#FFF"
   },
   "tabBar": {
-    "selectedColor": "#FFCC00",
+    "selectedColor": "#F9F027",
+    "backgroundColor": "#292929",
     "list": [
       {
       "pagePath": "pages/index/index",
@@ -36,14 +43,14 @@
     {
       "pagePath": "pages/cart/cart",
       "text": "购物车",
-      "iconPath": "images/index/homePage.png",
-      "selectedIconPath": "images/index/homePage_select.png"
+      "iconPath": "images/index/message.png",
+      "selectedIconPath": "images/index/message_select.png"
     },
     {
       "pagePath": "pages/personal/personal",
       "text": "我的",
-      "iconPath": "images/index/homePage.png",
-      "selectedIconPath": "images/index/homePage_select.png"
+      "iconPath": "images/index/personal.png",
+      "selectedIconPath": "images/index/personal_select.png"
     }
     ]
   }

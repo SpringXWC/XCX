@@ -38,7 +38,9 @@
     color:#666;
     padding-top: 20rpx;
 }
-
+.nav{
+  width: 100%;
+}
 .perNet{
     box-sizing:border-box;
     width: 100%;

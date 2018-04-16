@@ -12,7 +12,7 @@
       </view>
     </view>
     <view class='perNet'  wx:for="{{list}}" wx:key="key">
-      <navigator url="{{item.url}}">
+      <navigator url="{{item.url}}"  class='nav'>
         <image src="{{item.imgUrl}}" class='img'/>
         <text class='text3'>{{item.title}}</text>
       </navigator>    

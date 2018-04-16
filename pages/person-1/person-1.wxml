@@ -1,0 +1,75 @@
+<!--pages/person-1/person-1.wxml-->
+   <view class="content">
+    <view class="tabBar">
+      <view class="tabBar-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">小龙居</view>  
+      <view class="tabBar-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">龙悦居</view>  
+      <view class="tabBar-list {{currentTab==2 ? 'on' : ''}}" data-current="2" bindtap="swichNav">星河</view>
+      <view class="tabBar-list {{currentTab==3 ? 'on' : ''}}" data-current="3" bindtap="swichNav">CoCocity</view>    
+    </view>
+   
+      <swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{winHeight}}px" bindchange="bindChange">  
+        <swiper-item>
+        <scroll-view scroll-y="true" class="container discovery withtab" bindscrolltoupper="upper" bindscrolltolower="lower"                   scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}" style="height:{{winHeight}}px">  
+          <swiper class="activity" 
+            indicator-dots="{{indicatorDots}}"
+            autoplay="{{autoplay}}" 
+            interval="{{interval}}" 
+            duration="{{duration}}">
+            <block wx:for="{{imgUrls}}" wx:key="key">
+              <swiper-item>
+                <image src="{{item}}" class="slide-image" width="355" height="155"/>
+              </swiper-item>
+            </block>
+          </swiper>
+          <block wx:for="{{feed}}" wx:for-index="idx" wx:for-item="item" data-idx="{{idx}}" wx:key="key">
+            <view class="feed-item">
+              <view class="feed-source">
+                <a class="">
+                  <view class="avatar">
+                    <image src="{{item.feed_source_img}}"></image>
+                  </view>
+                  <text>{{item.feed_source_name}}</text>
+                </a>
+              </view>
+              <view class="feed-content">
+                <view class="question" qid="{{question_id}}" bindtap="bindQueTap">
+                  <a class="question-link">
+                    <text>{{item.question}}</text>
+                  </a>
+                </view>
+                <view class="answer-body">
+                  <view bindtap="bindItemTap">
+                    <text class="answer-txt" aid="{{answer_id}}">{{item.answer_ctnt}}</text>
+                  </view>
+                  <view class="answer-actions" bindtap="bindItemTap">
+                    <view class="like dot">
+                      <a>{{item.good_num}} 赞同 </a>
+                    </view>
+                    <view class="comments dot">
+                      <a>{{item.comment_num}} 评论 </a>
+                    </view>
+                    <view class="follow-it">
+                      <a>关注问题</a>
+                    </view>
+                  </view>
+                </view>
+              </view>
+            </view>
+          </block>
+        </scroll-view>   
+      </swiper-item>  
+    
+      <swiper-item>  
+        <view>龙悦居</view>  
+      </swiper-item> 
+
+      <swiper-item>  
+        <view>星河</view>  
+      </swiper-item> 
+
+      <swiper-item>  
+        <view>cococity</view>  
+      </swiper-item> 
+    </swiper> 
+   
+</view>    

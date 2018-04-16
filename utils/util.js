@@ -17,3 +17,34 @@ const formatNumber = n => {
 module.exports = {
   formatTime: formatTime
 }
+function getData(url) {
+  return new Promise(function (resolve, reject) {
+    wx.request({
+      url: url,
+      data: {},
+      header: {
+        //'Content-Type': 'application/json'
+      },
+      success: function (res) {
+        console.log("success")
+        resolve(res)
+      },
+      fail: function (res) {
+        reject(res)
+        console.log("failed")
+      }
+    })
+  })
+}
+var person = require('../data/data_person/data_person.js');
+var personNext = require('../data/data_person/data_personNext.js');
+
+function getPerson() {
+  return person.person;
+}
+function getPersonNext() {
+  return personNext.personNext;
+}
+module.exports.getPerson = getPerson;
+module.exports.getPersonNext = getPersonNext;
+module.exports.getData = getData;
